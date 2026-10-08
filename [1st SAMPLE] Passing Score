@@ -1,0 +1,38 @@
+/******************************************************************************
+
+The Passing Score is 70 or higher = Passed
+    OTHERWISE = Failed
+    Range: 0-100
+    
+    INPUT
+        IF grade >= 70 (70-100)
+            DISPLAY "Passed"
+        ELSE 
+            DISPLAY "Failed"
+        ENDIF
+        
+*******************************************************************************/
+#include <iostream> //cin (input), cout (output)
+using namespace std;
+
+int main()
+{
+    int grade;
+    
+    cout<<"Enter your grade (accept whole numbers only): "; //prompt
+        cin>> grade;
+    
+    // 1 >= 0-100 less 0 invalid
+    if (grade < 0){
+    cout<<"Invalid: Negative values are not allowed"<<endl;
+    }else if (grade > 100){
+    cout<<"Invalid: Grade cannot be higher than 100"<<endl;
+    }else if (grade >= 70)
+    {
+    cout<<"Passed"<<endl;
+    }else{
+    cout<<"Failed"<<endl;
+    }
+
+    return 0;
+}
