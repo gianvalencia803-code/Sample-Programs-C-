@@ -1,0 +1,28 @@
+/*********************************************************************************
+ POP = Procedural-Orientated Program
+
+ INPUT = hrswork, hourlyrate
+ PROCESS = grossPay = rate * hrs
+ OUTPUT = grosspay
+
+ ********************************************************************************/
+ #include<iostream>
+
+ using namespace std;
+
+ int main()
+ {
+    //INPUT
+        double hours = 40;
+        double rate = 500;
+        double grossPay;
+    
+    //PROCESS
+        grossPay = hours*rate;
+
+    //OUTPUT
+        cout<<"GrossPay: "<<grossPay;
+
+    return 0;
+
+ }
