@@ -1,0 +1,31 @@
+/******************************************************************************
+Object-Orientated Program (OOP)
+
+Input the name of student and age
+
+*******************************************************************************/
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+};
+
+int main()
+{
+    Student student1;
+    
+    cout <<"Enter student name: ";
+    getline (cin, student1.name);
+    cin >> student1.age;
+    
+    cout << "\n--Student Information--"<<endl;
+    cout << "Name: "<<student1.name<<endl;
+    cout << "Age: "<<student1.age<<endl;
+
+    return 0;
+}
