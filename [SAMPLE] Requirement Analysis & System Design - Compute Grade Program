@@ -1,0 +1,37 @@
+/******************************************************************************
+Requirement Analysis & System Design Sample
+
+Compute Grade Program
+
+Input, Process, Output Presentation (IPO)
+
+INPUT 
+    Grade 1 
+    Grade 2 
+PROCESS 
+    AVERAGE = (Grade 1 + Grade 2)/2 
+OUTPUT 
+    AVERAGE 
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //declare the variables
+    double grade1, grade2, average;
+    
+    cout << "Enter first grade: ";
+    cin >> grade1;
+    
+    cout << "Enter second grade: ";
+    cin >> grade2;
+    
+    average = (grade1+grade2)/2;
+    
+    cout << "Average: "<<average;
+
+    return 0;
+}
