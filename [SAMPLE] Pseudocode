@@ -1,0 +1,54 @@
+/******************************************************************************
+
+Pseudocode Sample
+
+Problem = highest and lowest value of two input numbers
+
+Input - firstNumber, secondNumber
+
+Process - Determine the highest and lowest values of the two input numbers.
+
+Output - Highest value and lowest value
+
+Pseudocode
+
+START
+
+ENTER firstNumber, secondNumber
+
+IF firstNumber > secondNumber THEN
+    DISPLAY firstNumber as Highest
+    DISPLAY secondNumber as Lowest
+ELSE 
+    DISPLAY secondNumber as Highest
+    DISPLAY firstNumber as Lowest 
+END IF
+
+END
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        int firstNumber, secondNumber;
+        
+        cout <<"Enter first number: ";
+        cin >>firstNumber;
+        
+        cout <<"Enter second number: ";
+        cin >>secondNumber;
+        
+        if(firstNumber>secondNumber){
+            //true
+            cout <<firstNumber<<" is the highest."<<endl;
+            cout <<secondNumber<<" is the lowest."<<endl;
+        }else{
+            //false
+            cout <<secondNumber<<" is the higest"<<endl;
+            cout <<firstNumber<<" is the lowest."<<endl;
+        }
+        return 0;
+}
