@@ -1,0 +1,39 @@
+/******************************************************************************
+
+Constant Sample
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char letter; //char - input a character
+    
+    //input
+    cout <<"Enter A, B or C: ";
+    cin >>letter;
+    
+    switch(letter){
+        case'A':
+        case'a':
+        cout << "A is for Apple";
+        break;
+        
+        case'B':
+        case'b':
+        cout <<"B is for Banana";
+        break;
+        
+        case'C':
+        case'c':
+        cout <<"C is for Cranberry";
+        break;
+        
+        default:
+        cout <<"Invalid letter";
+        }
+    
+    return 0;
+}
