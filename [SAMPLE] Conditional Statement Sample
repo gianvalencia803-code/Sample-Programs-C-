@@ -1,0 +1,35 @@
+/******************************************************************************
+
+Conditional Statement Sample
+
+Determine if a number is positive, negative, or zero
+
+Input = number
+Process
+    IF number > 0 THEN
+    DISPLAY positive
+    ELSE IF number < 0 THEN
+    ELSE
+    DISPLAY zero
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+    cout <<"Enter a number: ";
+    cin >> number;
+    
+    if(number>0){
+        cout <<"Positive";
+        }else if (number<0){
+            cout <<"negative";
+        }else{
+            cout <<"zero";
+        }
+    
+    return 0;
+}
