@@ -1,0 +1,36 @@
+/******************************************************************************
+
+IF-LADDER STATEMENTS
+The trick is to know all the options
+
+statement3; default condition if all conditions aren't met 
+
+Positive or Negative
+
+number > 0 - Positive
+number < 0 - Negative
+number = 0 - Zero
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+    
+    cout << "Enter number: ";
+    cin >> number;
+    
+    if(number > 0){
+        cout <<"Positive Integer. \n"; //true 
+    }else if(number < 0){
+        cout <<"Negative Integer. \n"; //false 
+    }else{
+        cout <<"Zero\n";
+    }
+    cout <<"Program Terminated\n";
+
+    return 0;
+}
