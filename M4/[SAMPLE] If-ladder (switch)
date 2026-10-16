@@ -1,0 +1,60 @@
+/******************************************************************************
+
+IF-Ladder Sample int32_t
+
+if you have two values displaying range, its automatically AND
+
+input - grade
+
+process - rade >=9G1 && grade <=100 - A 
+          Grade >=81 && grade <=90 - B
+          Grade >=70 && grade <=80 - C 
+          Grade >= 0 && grade <=69 - F 
+          else - Invalid grade - The default option
+          
+output - Letter
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int grade;
+    cout << "Grade ";
+    cin >> grade;
+    
+    if (grade < 0 || grade > 100){
+        cout <<"Invalid grade";
+        return 0;
+    }
+    switch(grade){
+        case 91 ... 100:
+            cout << "Grade A";
+            break;
+        case 81 ... 90:
+            cout << "Grade B";
+            break;
+        case 0 ... 69:
+            cout << "Grade F";
+    }
+    
+    /* 
+    switch(grade){
+        case 91:
+        case 92:
+        case 93: 
+        case 94:
+        case 95:
+        case 96:
+        case 97:
+        case 98:
+        case 99:
+        case 100:
+            cout <<"Grade A";
+    }
+    */
+
+    return 0;
+}
