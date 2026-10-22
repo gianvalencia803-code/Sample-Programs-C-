@@ -1,0 +1,24 @@
+/*
+
+<cmath> Sample
+
+Math Header Files - sqrt, pow
+
+*/
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+	double num;
+
+	cout << "Enter a number: ";
+	cin >> num;
+
+	cout << "Square root: " << sqrt(num) << endl;
+	cout << "Number Square: " << pow(num, 2);
+
+	return 0;
+}
