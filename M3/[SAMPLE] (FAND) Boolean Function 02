@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Boolean Function Sample 1 
+
+p       q       p && q      p || q      !p
+                (FAND)      (TOR)
+t       t       t           t           t f 
+t       f       f           t           f t 
+f       t       f           t 
+f       f       f  
+
+0 - false
+1 - true
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age;
+    cout<<"Enter age: ";
+    cin>>age;
+    
+    //FAND
+    bool qualified = age >= 18 && age <=60;
+    cout<<boolalpha;
+    cout<<"Qualified \t"<<qualified;
+
+    return 0;
+}
