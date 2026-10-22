@@ -1,0 +1,38 @@
+/******************************************************************************
+
+Multiple Assignment & Changing Values
+
+Initialization - sets the initial Values
+
+age 18
+garde 90.5
+Section A
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 18;
+    double grade = 90.5;
+    char section = 'A';
+    int x, y, z;
+    
+    x = y = z = 20; //multiple Assignement
+    
+    cout<<"Age: "<<age<<endl;
+    cout<<"Grade: "<<grade<<endl;
+    cout<<"Section: "<<section<<endl;
+    
+    //changing the Values
+    age = 20;
+    cout<<"Age: "<<age<<endl;
+    
+    cout<<"X = "<<x<<endl;
+    cout<<"Y = "<<y<<endl;
+    cout<<"Z = "<<z<<endl;
+    
+    return 0;
+}
