@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Variable Names Sample
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //var declare
+    int studentAge; //STUDENTAGE, studentAGE, student_Age
+    double studentGrade;
+    
+    //this show student information
+    cout<<"Student Information\n\n";
+    cout<<"Enter age: ";
+    cin >> studentAge;
+    
+    //this section ask for the studentGrade
+    cout<<"Enter grade: ";
+    cin >> studentGrade;
+    
+    cout<<"\nAge: "<<studentAge<<endl;
+    cout<<"Grade: "<<studentGrade<<endl;
+
+    return 0;
+}
