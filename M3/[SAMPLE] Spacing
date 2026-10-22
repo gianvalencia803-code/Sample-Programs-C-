@@ -1,0 +1,17 @@
+/*
+
+SPACING SAMPLE
+
+*/
+
+#include<iostream>
+
+using namespace std; //allows cout/cin | std::cout,std::cin
+
+int main()
+{
+	cout << "Welcome\ninto\nto\nprogramming\n";
+	cout << "\nC++ is fun";
+
+	return 0;
+}
