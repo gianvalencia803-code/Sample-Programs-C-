@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Comparison Operators Sample
+
+Ternary Operators
+
+condition ? valueTrue : valueFalse
+
+a > b ? a:b
+
+*******************************************************************************/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout<<"Enter first number: ";
+    cin>>b;
+    
+    cout<<"Enter second number: ";
+    cin>>b;
+    
+    int large = (a>b) ? a : b;
+    cout<<"Largest number "<<large;
+    
+    return 0;
+}
